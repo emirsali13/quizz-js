@@ -1,0 +1,118 @@
+:root {
+  --main: #fca311;
+  --text-color: #eeeeee;
+  --correct: #6a994e;
+  --incorrect: #ef233c;
+}
+
+body {
+  color: var(--text-color);
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  border-radius: 0.4rem;
+  font-size: 3rem;
+  min-width: 80rem;
+  background: var(--main);
+  transition: 0.3s;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(18, 18, 18, 0.6);
+  transform: scale(1.1);
+  transform: transform 100ms;
+}
+
+.choice-prefix {
+  padding: 2rem 2.5rem;
+  background-color: #252525;
+}
+
+.choice-text {
+  padding: 2rem;
+  width: 100%;
+  color: #252525;
+}
+
+.correct {
+  background: var(--correct);
+  transition: 0.5s;
+}
+
+.incorrect {
+  background: var(--incorrect);
+  transition: 0.5s;
+}
+
+/* Heads up Display */
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 2rem;
+  border: 0.2rem solid var(--main);
+  margin-top: 2rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#progressBarFull {
+  height: 100%;
+  background: var(--main);
+  width: 0%;
+  transition: 1s ease-in-out;
+}
+
+#question {
+  height: 17rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .choice-container {
+    min-width: 30rem;
+    font-size: 2.5rem;
+  }
+
+  #question {
+    font-size: 2.5rem;
+    height: auto;
+  }
+
+  .choice-text {
+    padding: 1.5rem;
+  }
+
+  .choice-prefix {
+    padding: 1.8rem 1.5rem;
+  }
+
+  .hud-prefix {
+    font-size: 1.8rem;
+  }
+
+  .hud-main-text {
+    font-size: 2rem;
+  }
+
+  #progressBar {
+    width: 15rem;
+    height: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}

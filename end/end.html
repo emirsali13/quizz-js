@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>End</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore">0</h1>
+        <form class="end-form-container">
+          <h2 id="end-text">Enter your name to save the result.</h2>
+          <input type="text" name="name" id="username" placeholder="Name" />
+          <div class="buttons">
+            <a href="../index.html" class="btn home-btn"
+              >Home <i class="fas fa-home icon"></i
+            ></a>
+            <button
+              class="btn save-btn"
+              id="saveScoreBtn"
+              type="submit"
+              onclick="saveHighScore(event)"
+              disabled
+            >
+              Save <i class="fas fa-floppy-disk icon"></i>
+            </button>
+          </div>
+        </form>
+        <a href="../game/game.html" class="btn play-again-btn"
+          >Play Again <i class="fas fa-redo-alt icon"></i
+        ></a>
+      </div>
+    </div>
+    <script src="end.js"></script>
+  </body>
+</html>
