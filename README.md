@@ -1,6 +1,6 @@
 # Quiz App
 
-This is a simple quiz application built using HTML, CSS, and JavaScript. It allows users to answer multiple-choice questions and displays their score at the end.
+This is a quiz application built using HTML, CSS, and JavaScript. It allows users to answer multiple-choice questions and displays their score at the end.
 
 ## Features
 
